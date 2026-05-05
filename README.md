@@ -102,3 +102,8 @@ Use AWS App Runner and select the ECR image:
 ```
 
 App Runner will provide a public HTTPS service URL.
+## Local Deployment
+
+```bash
+docker build -t sentiment-analysis .
+docker run -p 5000:5000 sentiment-analysis
